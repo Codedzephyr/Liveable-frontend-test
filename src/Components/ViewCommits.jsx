@@ -5,7 +5,6 @@ import SearchAndButton from './SearchAndButton'
 const ViewCommits = () => {
   return (
     <React.Fragment>
-        <body>
             <div className="navigationContainer1">
                 <div className="flexContainer">
                     <div className="leftNavContainer">
@@ -22,7 +21,6 @@ const ViewCommits = () => {
                     microsoft/vscode
                 </p>
             </div>
-        </body>
     </React.Fragment>
   )
 }

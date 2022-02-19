@@ -1,13 +1,11 @@
 import React from 'react';
 import './main.css'; 
-import Repositories from './repositories';
+import Repositories from './Repositories';
 import SearchAndButton from './SearchAndButton';
 
 
  const Homepage = () => {
      return (              
-<React.Fragment>
-<body>
     <main>
         <nav>
             <div className="left">
@@ -47,9 +45,7 @@ import SearchAndButton from './SearchAndButton';
                <Repositories></Repositories>
            </div>
     </main>
-</body>
 
-</React.Fragment>
      );
  }
 

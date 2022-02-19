@@ -12,7 +12,7 @@ const SearchAndButton = () => {
                  <input type="text" id="searchForm" name="search" placeholder="Eg.facebook/react"></input>
                  </div>
                  <div className="iconContainer">
-                     <i class="fas fa-search"></i>
+                     <i className ="fas fa-search"></i>
                  </div>
             </div>
             <div className="buttonContainerRight">

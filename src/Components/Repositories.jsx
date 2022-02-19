@@ -19,10 +19,11 @@ useEffect(() => {
         {
             storerepositories &&
             storerepositories.map((storerepository) => {
+                return(
                 <div className="itemContainer">
                     <div className="title">Title:{storerepository.repos}</div>
                 </div>
-            }
+                 ) }
             )}
     </div>
   )
