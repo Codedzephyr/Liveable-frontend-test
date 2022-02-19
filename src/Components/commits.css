@@ -1,0 +1,57 @@
+body {
+    max-width: 100%;
+}
+
+div.navigationContainer1 {
+    width: 100%;
+    background-color: #EFF2F6;
+}
+
+.flexContainer {
+    display: flex;
+    padding: 2em 0;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1.leftTitle1 {
+    line-height: 33.89px;
+    letter-spacing: -0.6px;
+    color: #18214D;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0.6rem;
+}
+
+div.leftNavContainer {
+    flex: 1;
+}
+
+div.rightNavContainer {
+    flex: 7;
+}
+
+div.microsoftTextContainer{
+    text-align: center;
+    margin: 4rem 0;
+}
+
+p.microsoftText{
+    font-weight: 600;
+    font-size: clamp(1.5rem,10vw,4rem);
+    font-style: normal;
+    color: #18214D;;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+}
+
+@media screen and (max-width:768px) {
+    div.flexContainer {
+        flex-direction: column;
+    }
+
+    div.rightNavContainer {
+        display: none;
+    }
+}

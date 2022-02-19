@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+    max-width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 95%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    margin: 2rem 0;
+}
+
+div.left {
+    flex: 1;
+}
+
+div.right {
+    flex: 1;
+}
+
+ul.navLinks {
+    display: flex;
+    list-style: none;
+    float: right;
+    width: 50%;
+    max-width: 200px;
+    justify-content: space-between;
+}
+
+h1.leftTitle {
+    line-height: 33.89px;
+    letter-spacing: -0.6px;
+    color: #18214D;
+    font-weight: 700;
+    font-style: normal;
+}
+
+li.navLinksItem {
+    color: #18214D;
+    cursor: pointer;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    font-size: clamp(0.9rem,10vw,1.2rem);
+}
+
+p.centerText {
+    color: #18214D;
+    text-align: center;
+    font-size: clamp(3rem, 10vw, 5rem);
+    /* font-size: 72px; */
+    letter-spacing: -3px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1rem;
+    /* line-height: 90px; */
+    line-height: clamp(50px, 10vw, 90px);
+}
+
+div.CenterTextContainer {
+    margin: 4rem 0;
+}
+
+p.centerText1 {
+    font-weight: 400;
+    font-style: normal;
+    /* line-height: 24px; */
+    line-height: clamp(30px, 10vw, 24px);
+    font-size: clamp(1.2rem, 10vw, 1.2rem);
+    text-align: center;
+}
+
+div.formContainer {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+
+div.searchContainerLeft {
+    flex: 4;
+    display: flex;
+    position: relative;
+}
+
+div.searchForm {
+    flex: 1;
+}
+
+div.iconContainer {
+    flex: 1;
+    position: absolute;
+    left: 14px;
+    top: 19px;
+}
+
+.fa-search {
+    font-size: 28px;
+}
+
+div.buttonContainerRight {
+    flex: 1;
+}
+
+#searchForm {
+    width: 100%;
+    /* padding: 1.5em; */
+    padding: 1.4em 3rem;
+    border: none;
+    font-size: 1rem;
+    background-color: #DFE4EA;
+    border-radius: 8px;
+}
+
+button.submit {
+    background-color: #F3663F;
+    padding: 1em;
+    font-size: clamp(0.8rem, 10vw, 1.1rem);
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+p.bottomCenter {
+    text-align: center;
+    font-size: clamp(0.8rem, 10vw, 1.0rem);
+    color: #3E4462;
+    margin: 1rem 0;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+}
+
+
+@media screen and (max-width:768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.left {
+        text-align: center;
+    }
+
+    div.right {
+        display: grid;
+        place-items: center;
+    }
+
+    div.CenterTextContainer {
+        margin: 2rem 0;
+    }
+
+    br.break {
+        display: none;
+    }
+
+    div.formContainer {
+        flex-direction: column;
+    }
+
+
+}
