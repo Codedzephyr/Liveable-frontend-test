@@ -1,5 +1,6 @@
 import React from 'react';
 import './main.css'; 
+import Repositories from './repositories';
 import SearchAndButton from './SearchAndButton';
 
 
@@ -40,6 +41,10 @@ import SearchAndButton from './SearchAndButton';
                <p className="bottomCenter">
                    Or pick one of these suggested repos
                </p>
+           </div>
+
+           <div className="container">
+               <Repositories></Repositories>
            </div>
     </main>
 </body>

@@ -4,7 +4,7 @@ const Repositories = () => {
     const [storerepositories, setstoreRepositories] = useState("");
     const getApiData = async () => {
   const response = await fetch(
-    "'GET /orgs/{org}/repos'"
+   "https://api.github.com/users/octocat/repos"
   ).then((response) => response.json());
   // update the state
   setstoreRepositories(response);
@@ -13,8 +13,18 @@ const Repositories = () => {
 useEffect(() => {
   getApiData();
 }, []);
+
   return (
-    <div>repositories</div>
+    <div className='container'>
+        {
+            storerepositories &&
+            storerepositories.map((storerepository) => {
+                <div className="itemContainer">
+                    <div className="title">Title:{storerepository.repos}</div>
+                </div>
+            }
+            )}
+    </div>
   )
 }
 
