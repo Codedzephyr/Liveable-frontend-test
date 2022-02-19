@@ -1,10 +1,21 @@
-import React, {useState} from 'react';
- const [storerepositories, setstoreRepositories] = useState();
+import React, {useState, useEffect} from 'react';
+ 
+const Repositories = () => {
+    const [storerepositories, setstoreRepositories] = useState("");
+    const getApiData = async () => {
+  const response = await fetch(
+    "'GET /orgs/{org}/repos'"
+  ).then((response) => response.json());
+  // update the state
+  setstoreRepositories(response);
+};
 
-const repositories = () => {
+useEffect(() => {
+  getApiData();
+}, []);
   return (
     <div>repositories</div>
   )
 }
 
-export default repositories
+export default Repositories;
