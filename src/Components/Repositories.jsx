@@ -24,6 +24,7 @@ useEffect(() => {
                 <div className="itemContainer">
                     <div className="title">Title:{storerepository.login}</div>
                     <div className="image">Image: {storerepository.avatar_url}</div>
+                    <div></div>
                 </div>
                  ) }
             )}
